@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.asiainfo.dao.FunctionTreeMapper">
+    <select id="getFunctionTreeById" parameterType="java.lang.Integer" resultType="com.asiainfo.entity.FunctionTree">
+        select * from function_tree where id = ${value}
+    </select>
+</mapper>
